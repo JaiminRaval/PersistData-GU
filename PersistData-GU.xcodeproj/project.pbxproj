@@ -15,6 +15,7 @@
 		07D7368B2CA13D49005A4985 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 07D7368A2CA13D49005A4985 /* Base */; };
 		07E170042CA18F1900C91260 /* JokeDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07E170022CA18F1900C91260 /* JokeDataModel.xcdatamodeld */; };
 		07E170062CA18F9300C91260 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E170052CA18F9300C91260 /* CoreDataManager.swift */; };
+		07E1700C2CA1AB6900C91260 /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E1700B2CA1AB6900C91260 /* JokeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		07D7368C2CA13D49005A4985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07E170032CA18F1900C91260 /* JokeDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JokeDataModel.xcdatamodel; sourceTree = "<group>"; };
 		07E170052CA18F9300C91260 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		07E1700B2CA1AB6900C91260 /* JokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +62,50 @@
 		07D7367D2CA13D48005A4985 /* PersistData-GU */ = {
 			isa = PBXGroup;
 			children = (
+				07E1700A2CA1A53500C91260 /* Models */,
+				07E170082CA1A48800C91260 /* Views */,
+				07E170092CA1A51900C91260 /* Controllers */,
+				07E170072CA1A46E00C91260 /* Services */,
 				07D7367E2CA13D48005A4985 /* AppDelegate.swift */,
 				07D736802CA13D48005A4985 /* SceneDelegate.swift */,
-				07D736822CA13D48005A4985 /* ViewController.swift */,
-				07D736842CA13D48005A4985 /* Main.storyboard */,
 				07D736872CA13D49005A4985 /* Assets.xcassets */,
-				07D736892CA13D49005A4985 /* LaunchScreen.storyboard */,
 				07D7368C2CA13D49005A4985 /* Info.plist */,
-				07E170022CA18F1900C91260 /* JokeDataModel.xcdatamodeld */,
-				07E170052CA18F9300C91260 /* CoreDataManager.swift */,
 			);
 			path = "PersistData-GU";
+			sourceTree = "<group>";
+		};
+		07E170072CA1A46E00C91260 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				07E170052CA18F9300C91260 /* CoreDataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		07E170082CA1A48800C91260 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07D736842CA13D48005A4985 /* Main.storyboard */,
+				07D736892CA13D49005A4985 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07E170092CA1A51900C91260 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07D736822CA13D48005A4985 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		07E1700A2CA1A53500C91260 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07E170022CA18F1900C91260 /* JokeDataModel.xcdatamodeld */,
+				07E1700B2CA1AB6900C91260 /* JokeModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +181,7 @@
 			files = (
 				07D736832CA13D48005A4985 /* ViewController.swift in Sources */,
 				07D7367F2CA13D48005A4985 /* AppDelegate.swift in Sources */,
+				07E1700C2CA1AB6900C91260 /* JokeModel.swift in Sources */,
 				07E170042CA18F1900C91260 /* JokeDataModel.xcdatamodeld in Sources */,
 				07E170062CA18F9300C91260 /* CoreDataManager.swift in Sources */,
 				07D736812CA13D48005A4985 /* SceneDelegate.swift in Sources */,
@@ -377,8 +413,7 @@
 				07E170032CA18F1900C91260 /* JokeDataModel.xcdatamodel */,
 			);
 			currentVersion = 07E170032CA18F1900C91260 /* JokeDataModel.xcdatamodel */;
-			name = JokeDataModel.xcdatamodeld;
-			path = "/Users/jaiminraval27/Documents/my iOS apps/GU/PersistData-GU/PersistData-GU/JokeDataModel.xcdatamodeld";
+			path = JokeDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
