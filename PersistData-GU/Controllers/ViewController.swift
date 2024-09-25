@@ -12,7 +12,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setUsrDefaults()
+        
+        writeToCD()
     }
     
     
@@ -39,6 +42,12 @@ class ViewController: UIViewController {
         guard let retrivedData = defaults.string(forKey: key) else { return "" }
         return retrivedData
         
+    }
+    
+    
+    func writeToCD() {
+        let joke = JokeModel(id: 1, type: "General", setup: "", punchline: "")
+        CoreDataManager.addToCoreData(jokeObject: joke)
     }
     
     
